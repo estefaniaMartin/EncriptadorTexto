@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="imagenes/Logo.svg" alt="Logo de alura">
+        </header>
+        <main>
+            <section>
+                <div class="caja_de_texto">
+                    <textarea class="textoEncriptar" name="texto_a_encriptar" id="texto_a_encriptar" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="advertencia">
+                    <img src="imagenes/Vector!.svg" alt="advertencia"><p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button type="button" value="Encriptar" id="encriptar" onclick="botonEncriptador()" >Encriptar</button>
+                    <button type="button" value="Desencriptar" id="desencriptar" onclick="botonDesencriptador()" >Desencriptar</button>
+                </div>
+            </section>
+            <section class="panel_lateral_informativo">
+                <div><img src="imagenes/Muñeco.svg" alt="muñeco-con-lupa" id="muñeco" class="muñeco"></div>
+                <div class="cuadro_mensaje">
+                    <textarea class="mensaje" name="texto_encriptado" id="texto_encriptado"></textarea>
+                    <p id="ningun_mensaje" class="ningun_mensaje">Ningún mensaje fue encontrado</p>
+                    <p id="consejo" class="consejo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+                <div>
+                    <button id="boton-copiar" class="botonCopiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© Encriptador realizado por Estefanía Martín </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

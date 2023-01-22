@@ -1,0 +1,253 @@
+*
+{   
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+body
+{
+    background: #F3F5FC;
+}
+
+header
+{
+    width: 100%;
+    height: 40px;
+}
+
+header img
+{
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+main
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja_de_texto
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 10%;
+    top: 15%;
+}
+
+.caja_de_texto textarea
+{
+    resize: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    border-width: 0;
+    border-style: unset;
+    background-color: white;
+    outline: none;
+    font-size: 32px;
+    color: #0A3871;
+    text-transform: lowercase;
+}
+
+.caja_de_texto textarea::placeholder
+{
+    color: #0A3871;
+}
+
+.caja_de_texto textarea::-webkit-scrollbar 
+{
+    width: 12px;               /* width of the entire scrollbar */
+    background: #0A3871;
+    border-radius: 20px;
+}
+    
+.caja_de_texto textarea::-webkit-scrollbar-thumb
+{
+    background-color: #F3F5FC;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #0A3871;  /* creates padding around scroll thumb */
+    transition: 1s all;
+}
+
+.caja_de_texto textarea::-webkit-scrollbar-thumb:hover
+{
+    background-color: #bec1c5;
+}
+
+.advertencia
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+
+    position: absolute;
+    width: 229px;
+    height: 18px;
+    left: 12%;
+    top: 72%;
+}
+
+.advertencia p
+{
+    font-size: 12px;
+    color: #495057;
+    font-weight: 800;
+}
+
+.botones
+{
+    position: absolute;
+    width: 50%;
+    height: 80px;
+    left: 10%;
+    top: 75%;
+    align-items: center;
+}
+
+#encriptar
+{
+    width: 45%;
+    height: 67px;
+    padding: 24px;
+    margin: 10px;
+    background-color: #0A3871;
+    border-radius: 24px;
+    border: 0;
+    color: #FFFFFF;    
+    transition: 1s all;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#encriptar:hover
+{
+    background-color: #052051;
+}
+
+#desencriptar
+{
+    width: 45%;
+    height: 67px;
+    left: 352px;
+    padding: 24px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 800;
+}
+
+/*-------------------------------------*/
+
+.panel_lateral_informativo
+{
+    position: absolute;
+    width: 300px;
+    height: 700px;
+    left: 70%;
+    top: 5%;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.muñeco
+{
+    position: absolute;
+    width: 100%;
+    top: 10%;
+}
+.mensaje
+{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    
+
+    background-color: transparent;
+    border: none;
+    resize: none;
+    position:absolute;
+
+    top: 5%;
+
+    color: #0A3871;
+    line-height: 29px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.ningun_mensaje
+{
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #495057;
+    padding: 20px;
+    position: absolute;
+    top: 60%;
+}
+
+.consejo
+{
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #495057;
+    padding: 20px;
+    position: absolute;
+    top: 70%;
+}
+
+.botonCopiar
+{
+    box-sizing: border-box;
+    padding: 24px;
+
+    position: absolute;
+    width: 90%;
+    height: 67px;
+    left: 5%;
+    top: 85%;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+footer
+{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-weight: 200;
+    padding: 40px;
+    position: absolute;
+    width: 50%;
+    height: 40px;
+    top: 90%;
+}
